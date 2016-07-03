@@ -10,7 +10,7 @@ can take several seconds; however, the first time a `.blt` file is
 parsed, a cached version with the extension `.pickle` is written which
 makes subsequent calls to `parseBLT('foo.blt')` significantly faster.
 
-```
+```python
 >>> import ranked
 >>> root, numBallots, ranks, candidates, description = ranked.parseBLT('2010-Oakland-Mayor.blt')
 >>> description
