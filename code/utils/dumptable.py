@@ -7,8 +7,8 @@ import glob
 print '''The Data
 ========
 
-| Year|Location|Contest|File|
-|---------------------------|'''
+| Year | Location | Contest | File |
+|------|----------|---------|------|'''
 for i in sorted(glob.glob('data/*.blt')):
     name, ext = os.path.splitext(os.path.basename(i))
     parts = name.split( '-' )
@@ -20,6 +20,6 @@ for i in sorted(glob.glob('data/*.blt')):
             contest += ', ward %s' % parts[3][1:]
         else:
             contest += ', district %s' % parts[3][1:]
-    # year location contest file (size)
-    print '| %s|%s|%s|%s|' % (year, location, contest, i)
+    # year location contest
+    print '| %s | %s | %s | %s |' % (year, location, contest, name + ext)
 # vim: set sw=4 sts=4 tw=0 expandtab:
