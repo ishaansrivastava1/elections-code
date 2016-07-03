@@ -177,7 +177,7 @@ Condorcet winner and lower bound requires the `numpy` package and
 computing the IRV margin exactly requires the `CPLEX` library and
 Python wrapper.
 
-```
+```python
 #!/usr/bin/env python
 
 import sys
